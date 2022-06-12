@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="file" id="image_input">
+    
+    <div id="display_image">
+         <img src="image_placeholder.png" id="imgPreview" alt="Preview" width="250px" height="250px">
+    </div>
+
+    <script src="index.js"></script>
+    <!-- <script>
+        const image_input = document.querySelector("#image_input");
+        var uploded_image = "";
+
+        image_input.addEventListener("change", function () {
+            const render = new FileReader();
+            render.addEventListener("load", () => {
+                uploded_image = render.result;
+                document.querySelector("#imgPreview").setAttribute("src", uploded_image);
+            });
+            render.readAsDataURL(this.files[0]);
+        })
+    </script> -->
+</body>
+
+</html>
